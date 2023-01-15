@@ -1,0 +1,11 @@
+set serveroutput on
+set verify off
+
+
+declare
+v_no int:=10;
+begin
+dbms_output.put_line('v ='||v_no);
+
+
+END;
