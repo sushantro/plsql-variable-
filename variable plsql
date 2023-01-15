@@ -9,3 +9,22 @@ dbms_output.put_line('v ='||v_no);
 
 
 END;
+
+
+
+for loop in plsql
+
+set serveroutput on
+set verify off
+
+
+declare
+i    int(10);
+begin
+
+For I in 1..10
+loop
+dbms_output.put_line(i);
+END loop;
+
+END;
