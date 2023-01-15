@@ -28,3 +28,37 @@ dbms_output.put_line(i);
 END loop;
 
 END;
+
+procedure 
+
+
+set serveroutput on
+create or replace procedure emp
+(
+sush     htd.firstname%type,
+fat      htd.lastname%type
+
+
+
+)
+
+AS
+BEGIN
+
+insert into htd(firstname,lastname)values(sush,fat);
+commit;
+dbms_output.put_line('inser sucesfull');
+
+
+
+
+
+
+
+END;
+/
+
+EXECUTE emp('sush','jjkkk')
+
+
+
